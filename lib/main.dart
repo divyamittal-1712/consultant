@@ -15,7 +15,6 @@ Future<void> main() async {
   final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   Future.delayed(Duration(seconds: 3));
-  PermissionHandle.permission();
   runApp(const MyApp());
   FlutterNativeSplash.remove();
   SharedPre().init();
