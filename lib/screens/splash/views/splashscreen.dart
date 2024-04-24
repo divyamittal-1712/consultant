@@ -1,4 +1,6 @@
 import 'dart:ui';
+import 'package:consultant_app/screens/home/bottom_navigation/home_page/homepage_screen.dart';
+import 'package:consultant_app/screens/home/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../constant/app_assets.dart';
@@ -27,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // if(storedText.isNotEmpty){
       //   Navigator.of(context).pushReplacementNamed(HomeActivity.routeName);
       // }else{
-        Navigator.of(context).pushReplacementNamed(SplashScreen.routeName);
+        Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
       // }
     });
 
@@ -37,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return Scaffold(
-      backgroundColor: AppTheme.appYellow,
+      backgroundColor: AppTheme.appWhite,
       body: Stack(
         children: [
           Center(

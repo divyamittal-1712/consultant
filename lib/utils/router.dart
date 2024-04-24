@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/home/home.dart';
 import '../screens/splash/views/splashscreen.dart';
 
 
@@ -28,6 +29,9 @@ Route<dynamic> generateRouteNew(RouteSettings settings) {
   switch (settings.name) {
     case SplashScreen.routeName:
       routeView = const SplashScreen();
+      break;
+    case HomeScreen.routeName:
+      routeView = const HomeScreen();
       break;
 
 
