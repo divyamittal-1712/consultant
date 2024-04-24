@@ -8,6 +8,7 @@ class ProviderHandler {
   List<SingleChildWidget> providersList() {
     List<SingleChildWidget> independentServices = [
       // ListenableProvider<LoginProvider>(create: (_) => LoginProvider()),
+      // ListenableProvider<LoginProvider>(create: (_) => LoginProvider()),
 
 
     ];
