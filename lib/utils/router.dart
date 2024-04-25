@@ -1,3 +1,5 @@
+import 'package:consultant_app/screens/login/views/OTP.dart';
+import 'package:consultant_app/screens/login/views/phone.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/home/home.dart';
@@ -32,6 +34,12 @@ Route<dynamic> generateRouteNew(RouteSettings settings) {
       break;
     case HomeScreen.routeName:
       routeView = const HomeScreen();
+      break;
+    case PhoneScreen.routeName:
+      routeView = const PhoneScreen();
+      break;
+      case OTPScreen.routeName:
+      routeView = const OTPScreen();
       break;
 
 

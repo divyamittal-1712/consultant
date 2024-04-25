@@ -1,7 +1,9 @@
 class AppAssets {
 
-  static String appLogo= "assets/images/logo.png";
-  static String placeholder= "assets/images/placeholder.png";
+  static const String _imagePath = 'assets/images/';
+  static String appLogo= "${_imagePath}logo.png";
+  static String placeholder= "${_imagePath}placeholder.png";
+  static String phoneBack= "${_imagePath}phone_back.jpg";
 
 
 }

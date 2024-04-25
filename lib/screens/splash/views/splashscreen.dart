@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:consultant_app/screens/home/bottom_navigation/home_page/homepage_screen.dart';
 import 'package:consultant_app/screens/home/home.dart';
+import 'package:consultant_app/screens/login/views/phone.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../constant/app_assets.dart';
@@ -29,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // if(storedText.isNotEmpty){
       //   Navigator.of(context).pushReplacementNamed(HomeActivity.routeName);
       // }else{
-        Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+        Navigator.of(context).pushReplacementNamed(PhoneScreen.routeName);
       // }
     });
 

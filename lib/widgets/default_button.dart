@@ -82,9 +82,9 @@ class DefaultButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
             fixedSize: Size(width ?? fixwidth, height ?? 50),
             // fixedSize: Size(MediaQuery.of(context).size.width * fixedSizeWidth!, height ?? 48),
-            backgroundColor: color ?? AppColor.yellowColor,
+            backgroundColor: color ?? AppColor.appBlack,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(radius ?? 15))),
+                borderRadius: BorderRadius.circular(radius ?? 10))),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
