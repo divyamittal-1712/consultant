@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
 import '../bottom_navigation/home_page/homepage_screen.dart';
+import '../bottom_navigation/setting_page/setting_screen.dart';
+import '../bottom_navigation/wallet_page/wallet_screen.dart';
 
 class HomeProvider extends ChangeNotifier{
   int navIndex = 0;
@@ -17,9 +19,9 @@ class HomeProvider extends ChangeNotifier{
       case 1:
         return HomePage();
       case 2:
-        return HomePage();
+        return WalletPage();
       case 3:
-        return HomePage();
+        return SettingPage();
       default:
         return HomePage();
     }

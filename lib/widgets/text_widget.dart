@@ -1,3 +1,4 @@
+import 'package:consultant_app/utils/font_family.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/app_theme.dart';
@@ -40,6 +41,7 @@ class NormalText extends StatelessWidget {
         height: lineHeight??1.3,
           decoration: textDecoration,
           color: color ?? Colors.black,
+          fontFamily: FontFamily.Manrope,
           fontWeight: fontWeight ?? FontWeight.w400,
           fontSize: size ?? 16+5),
     );
@@ -79,7 +81,7 @@ class BigText extends StatelessWidget {
       style: TextStyle(
         height: lineHeight??1.3,
           color: color ?? Colors.black,
-
+          fontFamily: FontFamily.Manrope,
           fontWeight: fontWeight ?? FontWeight.w600,
           fontSize: size ?? 22+5),
     );
@@ -122,6 +124,7 @@ class SmallText extends StatelessWidget {
         height: lineHeight??1.3,
           decoration: textDecoration,
           color: color ?? Colors.grey,
+          fontFamily: FontFamily.Manrope,
           fontWeight: fontWeight ?? FontWeight.w300,
           fontSize: size ?? 14+5),
     );

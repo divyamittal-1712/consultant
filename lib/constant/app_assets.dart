@@ -4,6 +4,7 @@ class AppAssets {
   static String appLogo= "${_imagePath}logo.png";
   static String placeholder= "${_imagePath}placeholder.png";
   static String phoneBack= "${_imagePath}phone_back.jpg";
+  static String image= "${_imagePath}image.jpg";
 
 
 }

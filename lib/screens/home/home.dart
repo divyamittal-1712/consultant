@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 BottomNavigationBar(
                   elevation: 2,
                   currentIndex: provider.navIndex,
-                  selectedItemColor: AppColor.buttonColor,
+                  selectedItemColor: AppColor.skyBlueColor,
                   backgroundColor: Color(0xFFFFF8F8)  ,
                   unselectedItemColor: AppColor.textGrey,
                   onTap: (value) {
@@ -46,24 +46,24 @@ class HomeScreen extends StatelessWidget {
                   type: BottomNavigationBarType.fixed,
                   items: [
                     BottomNavigationBarItem(
-                      activeIcon: SvgPicture.asset(AppSvg.homeIcon2),
+                      activeIcon:  Icon(Icons.home_outlined,color: AppColor.skyBlueColor,),
                       label: 'Home',
-                      icon: SvgPicture.asset(AppSvg.homeIcon),
+                      icon: Icon(Icons.home_outlined),
                     ),
                     BottomNavigationBarItem(
-                      activeIcon: SvgPicture.asset(AppSvg.heartIcon2),
+                      activeIcon: Icon(Icons.calendar_month,color: AppColor.skyBlueColor,),
                       label: 'Appointments',
-                      icon: SvgPicture.asset(AppSvg.heartIcon),
+                      icon:  Icon(Icons.calendar_month)
                     ),
                     BottomNavigationBarItem(
-                      activeIcon: SvgPicture.asset(AppSvg.chatIcon2),
+                      activeIcon:Icon(Icons.account_balance_wallet_outlined,color: AppColor.skyBlueColor,),
                       label: 'Wallet',
-                      icon: SvgPicture.asset(AppSvg.chatIcon),
+                      icon:  Icon(Icons.account_balance_wallet_outlined)
                     ),
                     BottomNavigationBarItem(
-                      activeIcon: SvgPicture.asset(AppSvg.profileIcon2),
+                      activeIcon: Icon(Icons.settings,color: AppColor.skyBlueColor,),
                       label: 'Setting',
-                      icon: SvgPicture.asset(AppSvg.profileIcon),
+                      icon: Icon(Icons.settings)
                     ),
 
                   ],

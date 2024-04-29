@@ -1,3 +1,4 @@
+import 'package:consultant_app/constant/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -56,7 +57,7 @@ class DefaultButton extends StatelessWidget {
   bool? loadingFlag;
   Key? key;
 
-  DefaultButton(
+    DefaultButton(
       {
          this.key,
         required this.text,
@@ -84,7 +85,7 @@ class DefaultButton extends StatelessWidget {
             // fixedSize: Size(MediaQuery.of(context).size.width * fixedSizeWidth!, height ?? 48),
             backgroundColor: color ?? AppColor.appBlack,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(radius ?? 10))),
+                borderRadius: BorderRadius.circular(radius ?? 4))),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -98,7 +99,7 @@ class DefaultButton extends StatelessWidget {
                 style: TextStyle(
                   fontSize: fontSize,
                   fontWeight: fontWeight,
-                  color: fontColor,
+                  color: fontColor ?? AppTheme.appWhite,
                 ),
                 textAlign: TextAlign.center,
               ),
